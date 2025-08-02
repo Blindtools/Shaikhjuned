@@ -1,5 +1,0 @@
-services:
-  - type: web
-    name: juned-ai-api
-    env: python
-    startCommand: python ai_chatbot.py
