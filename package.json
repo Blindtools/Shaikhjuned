@@ -1,0 +1,16 @@
+{
+  "name": "whatsapp-bot",
+  "version": "1.0.0",
+  "description": "WhatsApp AI Chat Bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.5",
+    "express": "^4.19.2",
+    "node-fetch": "^2.7.0",
+    "pino": "^8.1.0",
+    "qrcode": "^1.5.3"
+  }
+}
