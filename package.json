@@ -1,0 +1,28 @@
+{
+  "name": "whatsapp-stable-light-bot",
+  "version": "3.0.0",
+  "description": "Enhanced WhatsApp AI Bot with Multi-AI Models, Advanced APIs, and Smart Routing",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.17.1",
+    "@whiskeysockets/baileys": "^6.6.0",
+    "axios": "^1.6.2",
+    "express": "^4.18.2",
+    "form-data": "^4.0.0",
+    "fs": "^0.0.1-security",
+    "multer": "^1.4.5-lts.1",
+    "node-fetch": "^2.7.0",
+    "pdf-parse": "^1.1.1",
+    "pino": "^8.17.2",
+    "qrcode": "^1.5.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "Shaikh Juned",
+  "license": "MIT"
+}

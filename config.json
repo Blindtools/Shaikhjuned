@@ -1,0 +1,136 @@
+{
+  "server": {
+    "port": 3000,
+    "host": "0.0.0.0"
+  },
+  "ai_models": {
+    "default": "gemini",
+    "available": {
+      "gemini": {
+        "name": "Google Gemini",
+        "endpoint": "internal",
+        "description": "Google's advanced AI model with vision capabilities",
+        "features": ["text", "image", "audio", "pdf"]
+      },
+      "chatgpt4": {
+        "name": "ChatGPT-4",
+        "endpoint": "https://chatgpt-4-hridoy.vercel.app",
+        "description": "OpenAI's GPT-4 model",
+        "features": ["text"]
+      },
+      "claude": {
+        "name": "Claude AI",
+        "endpoint": "https://claudeai.anshppt19.workers.dev/api/chat",
+        "description": "Anthropic's Claude AI",
+        "features": ["text"]
+      },
+      "deepseek": {
+        "name": "DeepSeek",
+        "endpoint": "https://deepseek.ytansh038.workers.dev/",
+        "description": "DeepSeek AI model for coding and general tasks",
+        "features": ["text", "code"]
+      },
+      "qwen3": {
+        "name": "Qwen3 Coder",
+        "endpoint": "https://allmodels.revangeapi.workers.dev/revangeapi/qwen3-coder/chat",
+        "description": "Qwen3 specialized for coding tasks",
+        "features": ["text", "code"]
+      },
+      "moonshot": {
+        "name": "Moonshot AI",
+        "endpoint": "https://allmodels.revangeapi.workers.dev/revangeapi/moonshotai-Kimi-K2-Instruct/chat",
+        "description": "Moonshot AI Kimi model",
+        "features": ["text"]
+      },
+      "llama": {
+        "name": "Llama",
+        "endpoint": "https://laama.revangeapi.workers.dev/chat",
+        "description": "Meta's Llama model",
+        "features": ["text"]
+      }
+    }
+  },
+  "apis": {
+    "google_search": {
+      "endpoint": "https://googlesearchapi.nepcoderapis.workers.dev/",
+      "enabled": true,
+      "description": "Search the web for information"
+    },
+    "weather": {
+      "endpoint": "https://weather.itz-ashlynn.workers.dev/",
+      "enabled": true,
+      "description": "Get weather information for any location"
+    },
+    "translator": {
+      "endpoint": "https://sheikhjuned.nagad.my.id/api/AI-translator.php",
+      "enabled": true,
+      "description": "Translate text to any language"
+    },
+    "translator_alt": {
+      "endpoint": "https://hs-translate-text.vercel.app/",
+      "enabled": true,
+      "description": "Alternative translation service"
+    },
+    "youtube_transcribe": {
+      "endpoint": "https://api.hazex.sbs/yt-transcribe",
+      "enabled": true,
+      "description": "Transcribe YouTube videos"
+    },
+    "youtube_summarizer": {
+      "endpoint": "https://api.hazex.sbs/yt-summarizer",
+      "enabled": true,
+      "description": "Summarize YouTube videos"
+    },
+    "truecaller": {
+      "endpoint": "https://truecaller.privates-bots.workers.dev/",
+      "enabled": true,
+      "description": "Get phone number information"
+    },
+    "phone_info": {
+      "endpoint": "https://api.yabes-desu.workers.dev/tools/phone-info",
+      "enabled": true,
+      "description": "Get detailed phone specifications"
+    },
+    "image_to_pdf": {
+      "endpoint": "https://anshimagetopdfapi.onrender.com/anshapi/imagetopdf",
+      "enabled": true,
+      "description": "Convert images to PDF"
+    },
+    "tts": {
+      "endpoint": "https://api.streamelements.com/kappa/v2/speech",
+      "enabled": true,
+      "description": "Text-to-speech conversion",
+      "voices": {
+        "female": ["Salli", "Joanna", "Amy", "Emma", "Ivy"],
+        "male": ["Matthew", "Justin", "Brian", "Russell", "Joey"]
+      }
+    }
+  },
+  "user_profiles": {
+    "storage": "file",
+    "file_path": "./user_profiles.json",
+    "default_profile": {
+      "preferred_ai_model": "gemini",
+      "language": "en",
+      "voice_preference": "female",
+      "enabled_features": ["search", "weather", "translation", "youtube"],
+      "response_style": "detailed"
+    }
+  },
+  "features": {
+    "command_recognition": true,
+    "context_awareness": true,
+    "multi_modal_responses": true,
+    "auto_language_detection": true,
+    "smart_fallbacks": true
+  },
+  "security": {
+    "rate_limiting": {
+      "enabled": true,
+      "max_requests_per_minute": 30
+    },
+    "input_validation": true,
+    "cors_enabled": true
+  }
+}
+
