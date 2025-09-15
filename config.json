@@ -14,7 +14,7 @@
       },
       "chatgpt4": {
         "name": "ChatGPT-4",
-        "endpoint": "https://chatgpt-4-hridoy.vercel.app",
+        "endpoint": "https://chatgpt-4-hridoy.vercel.app/?question=$",
         "description": "OpenAI's GPT-4 model",
         "features": ["text"]
       },
@@ -133,4 +133,3 @@
     "cors_enabled": true
   }
 }
-
